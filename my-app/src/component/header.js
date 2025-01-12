@@ -11,10 +11,10 @@ export const Header = () => {
              <nav> 
             <ul className='header-nav'> 
                 <li> Home</li>
-                <li> Our Team</li>
+                <li> My Team</li>
                 <li> Treatments</li>
-                <li> Testmonials</li>
-                <li> Patient Reports</li>
+                <li> Patient Portal</li>
+                <li> About Us</li>
                 
             </ul>
              </nav>
