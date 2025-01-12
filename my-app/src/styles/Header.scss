@@ -1,0 +1,25 @@
+.header{
+
+ background-color:darkslategrey;
+ color: white;
+    .headersub{
+        width: 90%;
+        margin: auto;
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        img{
+            height: 50px;
+        }
+        .header-nav{
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            align-items: center;
+            li{
+                margin-right: 10px;
+            }
+        }
+     }
+} 
+

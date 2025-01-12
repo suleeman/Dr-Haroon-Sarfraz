@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
+import  "../styles/Header.scss"
+
 
 export const Header = () => {
   return (
-    <header className='header'>
-        <div><p className='header-logo'>Dr Haroon Sarfraz</p></div>
-        <nav> 
-            <ul> 
+    <header className="header">
+        <div className="headersub">
+            <p className='header-logo'>Dr Haroon Sarfraz</p>
+            <img className= "header-icon " src={require('../images/header-icon.png')} /> 
+             <nav> 
+            <ul className='header-nav'> 
                 <li> Home</li>
                 <li> Our Team</li>
                 <li> Treatments</li>
@@ -13,7 +17,9 @@ export const Header = () => {
                 <li> Patient Reports</li>
                 
             </ul>
-        </nav>
+             </nav>
+
+        </div>
     </header>
   )
 }
