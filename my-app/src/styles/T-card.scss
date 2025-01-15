@@ -1,0 +1,35 @@
+.tcard{
+   
+   
+    .tcard-sub{
+        width: 90%;
+        margin: auto;
+         display: flex;
+         flex-flow: wrap;
+         
+
+        .tcard-individual{
+            width: 250px;
+            height: 320px;
+            border: 1px solid black;
+            margin: 10px 0px 40px 45px;
+            background-color: darkslategrey;
+            border-radius: 7%;
+            box-shadow: darkslategrey 5px 5px, darkslategrey 10px 10px, darkslategrey 15px 15px, darkslategrey 20px 20px, darkslategrey 25px 25px;
+            .tcard-image{
+                height: 158px;
+                width: 251px;
+                border-radius: 11%;
+
+
+            }
+            .tcard-details{
+               
+                color: white;
+                padding: 10px;
+
+                
+            }
+        }
+    }
+}

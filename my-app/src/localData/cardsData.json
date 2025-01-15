@@ -1,10 +1,4 @@
 [
-    {"img" : "", "diseaseName" : "", "description" : ""},
-    {"img" : "", "diseaseName" : "", "description" : ""},
-    {"img" : "", "diseaseName" : "", "description" : ""},
-    {"img" : "", "diseaseName" : "", "description" : ""},
-    {"img" : "", "diseaseName" : "", "description" : ""},
-    {"img" : "", "diseaseName" : "", "description" : ""},
-    {"img" : "", "diseaseName" : "", "description" : ""},
-    {"img" : "", "diseaseName" : "", "description" : ""}
+    {"img" : "../images/teeth-Cleaning.png", "diseaseName" : "Root canal", "description" : "We provide best suggestion on root canal and help our customer to retain their lives"},
+    {"img" : "../images/teeth-Cleaning.png", "diseaseName" : "Root canal", "description" : "We provide best suggestion on root canal and help our customer to retain their lives"},    {"img" : "../images/teeth-Cleaning.png", "diseaseName" : "Root canal", "description" : "We provide best suggestion on root canal and help our customer to retain their lives"},    {"img" : "../images/teeth-Cleaning.png", "diseaseName" : "Root canal", "description" : "We provide best suggestion on root canal and help our customer to retain their lives"},    {"img" : "../images/teeth-Cleaning.png", "diseaseName" : "Root canal", "description" : "We provide best suggestion on root canal and help our customer to retain their lives"},    {"img" : "../images/teeth-Cleaning.png", "diseaseName" : "Root canal", "description" : "We provide best suggestion on root canal and help our customer to retain their lives"},    {"img" : "../images/teeth-Cleaning.png", "diseaseName" : "Root canal", "description" : "We provide best suggestion on root canal and help our customer to retain their lives"},    {"img" : "../images/teeth-Cleaning.png", "diseaseName" : "Root canal", "description" : "We provide best suggestion on root canal and help our customer to retain their lives"}
 ]
