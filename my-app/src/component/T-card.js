@@ -12,9 +12,10 @@ export const Tcard = () => {
            return (
            
             <div className='tcard-individual' key={i}> 
-            <video className= "tcard-image"  autoPlay  muted>
+            <img className="tcard-image" src={require("../images/teeth-Cleaning.png")}/>
+            {/* <video className= "tcard-image"  autoPlay  muted>
                <source src={require("../images/vedio.mp4")} type="video/mp4" />
-               </video>
+               </video> */}
             
      
             <div className='tcard-details'> 

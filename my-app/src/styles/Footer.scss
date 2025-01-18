@@ -2,9 +2,14 @@
     background-color: darkslategrey;
     color: white;
     align-content: center;
-    font-size: 20px;
-    margin-top: 20px;
-    padding-bottom: 50px;
+    h5{ 
+        font-size: 25px;
+
+    }
+   
+    margin-top: 120px;
+    padding-bottom: 43px;
+    height: 404px;
     .footer-sub{
         width: 90%;
         margin: auto;
@@ -22,10 +27,10 @@
         width: 62%;
         display: flex;
         .footer-address-details {
-            width: 44%;
+            width: 60%;
         }
         .footer-social-details {
-            width: 27%;
+            width: 40%;
             img {
                 height: 50px;
                

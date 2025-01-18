@@ -1,0 +1,54 @@
+.homeDisplay{
+   
+    padding: 45px 0px;
+    .homeDisplay-sub{
+        width: 90%;
+        margin: auto;
+        color: darkslategrey;
+        display:flex;
+        .homedisplay-details {
+            width: 77%;
+            h1{
+                width: 70%;
+                font-size: 70px;
+            }
+            .homedisplay-description{
+                width: 67%;
+                font-size: 40px;
+            }
+        }
+        .homedisplay-video {
+            width: 33%;
+            border: 3px solid darkslategrey;
+            padding: 10px;
+            border-radius: 22px;
+            video{
+               
+                width: 100%;
+            
+                border: 1px solid darkslategrey;
+                border-radius: 22px;
+               
+            }
+        }
+
+        button.homedisplay-button {
+            background: white;
+            color: darkslategrey;
+            border: 2px solid darkslategrey;
+            height: 51px;
+            width: 187px;
+            transition: width 2s;
+            // transition: height 2s;
+ 
+        }
+        button.homedisplay-button:hover{
+            background-color: darkslategrey;
+            color: white;
+            width: 300px;
+            height: 70px;
+        }
+
+    }
+
+}
