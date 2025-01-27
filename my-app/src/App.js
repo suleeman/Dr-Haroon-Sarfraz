@@ -7,7 +7,7 @@ import {Treatments} from "./pages/Treatments";
 import {PatientPortal} from "./pages/PatientPortal";
 import {NoPage} from "./pages/NoPage";
 import {MyTeam}   from './pages/MyTeam';
-
+import {BookingOnline} from "./pages/BookingOnline";
 
 export default function App() {
   return (
@@ -20,6 +20,7 @@ export default function App() {
           <Route path="MyTeam" element={< MyTeam/>} />
           <Route path="Treatments" element={<Treatments />} />
           <Route path="PatientPortal" element={<PatientPortal />} />
+          <Route path="bookingOnline" element={<BookingOnline />} />
           <Route path="*" element={<NoPage />} />
        
 
