@@ -8,14 +8,12 @@ export const Tcard = () => {
     <div className='tcard'>
       <div className='tcard-sub'  > 
         {  cardsData.map((card, i) => {
-                { console.log(card.img);}
+    
            return (
            
             <div className='tcard-individual' key={i}> 
-            <img className="tcard-image" src={require("../images/teeth-Cleaning.png")}/>
-            {/* <video className= "tcard-image"  autoPlay  muted>
-               <source src={require("../images/vedio.mp4")} type="video/mp4" />
-               </video> */}
+            <img className="tcard-image" src={card.img} />
+
             
      
             <div className='tcard-details'> 

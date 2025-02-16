@@ -1,0 +1,28 @@
+.doctors-info{
+    .doctors-info-img{
+        width: 100%;
+        height: auto;
+    }
+    .doctors-info-sub{       
+          width: 60%;
+           margin: auto;
+        .doctors-info-names{
+            display: flex;
+            justify-content: center;
+            .doctors-info-name{
+                display: flex;
+                text-decoration: none;
+                list-style: none;
+                color: darkslategrey;;
+        
+            }
+            .doctors-info-name:hover{
+                color: forestgreen;
+            }
+        }
+        .doctors-info-description{
+            display: none;
+        }
+    }
+    
+}

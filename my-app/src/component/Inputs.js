@@ -1,6 +1,8 @@
 import React from 'react'
 
+
 export const Inputs = ({...props}) => {
+
   return (<> 
  
       <label> {props.labelName}      </label>
@@ -10,8 +12,12 @@ export const Inputs = ({...props}) => {
           name={props.name}
           onChange={props.onChange}
           className={props.className}
-          required={true} minLength={2} maxLength={10}
-          // maxLength={props.maxLength}
+          onInvalid={props.onInvalid}
+          maxLength="10"
+          minLength="2"
+          placeholder={props.placeholder}
+        
+       
         
 
         />

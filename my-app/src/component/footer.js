@@ -28,9 +28,9 @@ export const Footer = () => {
 info@drharoonsarfraz.com.au</p>
          </div>
         <div className='footer-social-details'>  <h5> Socials</h5> 
-        <img src={require("../images/facebook.png")}/>
-        <img src={require("../images/instagram.png")}/>
-        <img src={require("../images/linkedin.png")}/>
+        <img src={"/images/facebook.png"}/>
+        <img src={"/images/instagram.png"}/>
+        <img src={"/images/linkedin.png"}/>
         </div>
         </div>
         </div>

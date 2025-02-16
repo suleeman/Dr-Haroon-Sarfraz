@@ -27,7 +27,7 @@ export const HomeDisplay = () => {
         
         <div className="homedisplay-video">
         <video  autoPlay loop  muted>
-               <source src={require("../images/homepage.mp4")} type="video/mp4" width="900px"/>
+               <source src={"/images/homepage.mp4"} type="video/mp4" width="900px"/>
                </video>        
         </div>
 

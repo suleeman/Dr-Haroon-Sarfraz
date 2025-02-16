@@ -23,13 +23,29 @@
                     width: 150px;
                     align-content: center;
                 }
-                input {
+                select {
+                    width: 490px;
+                    height: 52px;
+                    border: 2px solid darkslategrey;
+                    border-radius: 20px;
+                    padding: 5px 10px;
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                      -webkit-appearance: none;
+                      margin: 0;
+                    }}
+                input  {
                     width: 466px;
                     height: 36px;
                     border: 2px solid darkslategrey;
                     border-radius: 20px;
                     padding: 5px 10px;
-                }
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                      -webkit-appearance: none;
+                      margin: 0;
+                    }}
+
 
   
             }

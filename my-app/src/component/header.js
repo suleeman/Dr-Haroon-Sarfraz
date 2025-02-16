@@ -9,7 +9,7 @@ export const Header = () => {
     <header className="header">
         <div className="headersub">
             <p className='header-logo'>Dr Haroon Sarfraz</p>
-            <img className= "header-icon " src={require('../images/header-icon.png')} /> 
+            <img className= "header-icon " src={'/images/header-icon.png'} /> 
             <nav>
     <ul className='header-nav'>
       <li>
