@@ -20,9 +20,21 @@
                 color: forestgreen;
             }
         }
-        .doctors-info-description{
-            display: none;
-        }
+        
+     .doctors-details{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+                .doctors-photo{
+                    width: 150px;
+
+                }
+                .doctors-description{
+
+                }
+            }
+        
     }
     
 }

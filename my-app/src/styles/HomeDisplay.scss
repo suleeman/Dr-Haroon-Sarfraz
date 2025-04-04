@@ -1,54 +1,190 @@
-.homeDisplay{
-   
+.homeDisplay {
     padding: 45px 0px;
-    .homeDisplay-sub{
+
+    .homeDisplay-sub {
         width: 90%;
         margin: auto;
         color: darkslategrey;
-        display:flex;
+        display: flex;
+     // Allow wrapping of items on smaller screens
+        justify-content: space-between; // Space between text and video
+
         .homedisplay-details {
             width: 77%;
-            h1{
+
+            h1 {
                 width: 70%;
                 font-size: 70px;
             }
-            .homedisplay-description{
+
+            .homedisplay-description {
                 width: 67%;
                 font-size: 40px;
             }
         }
+
         .homedisplay-video {
             width: 33%;
             border: 3px solid darkslategrey;
             padding: 10px;
             border-radius: 22px;
-            video{
-               
+
+            video {
                 width: 100%;
-            
                 border: 1px solid darkslategrey;
                 border-radius: 22px;
-               
             }
         }
 
-        button.homedisplay-button {
-            background: white;
-            color: darkslategrey;
-            border: 2px solid darkslategrey;
-            height: 51px;
-            width: 187px;
-            transition: width 2s;
-            // transition: height 2s;
+   
+    }
+}
+button.homedisplay-button {
+    background: white;
+    color: darkslategrey;
+    border: 2px solid darkslategrey;
+    height: 90px;
+    width: 550px;
+    transition: width 2s;
+    font-size: 30px;
+
+
+    &:hover {
+        background-color: darkslategrey;
+        color: white;
+        width: 750px;
  
-        }
-        button.homedisplay-button:hover{
-            background-color: darkslategrey;
-            color: white;
-            width: 300px;
-            height: 70px;
+    }
+}
+@media (max-width: 1650px) { 
+    .homeDisplay .homeDisplay-sub .homedisplay-details h1 {
+        width: 70%;
+        font-size: 50px;
+    }
+    .homeDisplay .homeDisplay-sub .homedisplay-details .homedisplay-description {
+        width: 67%;
+        font-size: 40px;
+    }
+}
+@media (max-width: 1250px) { 
+    .homeDisplay .homeDisplay-sub .homedisplay-details h1 {
+        width: 100%;
+        font-size: 40px;
+    }
+    .homeDisplay .homeDisplay-sub .homedisplay-details .homedisplay-description {
+        width: 100%;
+        font-size: 30px;
+    }
+    .homeDisplay .homeDisplay-sub .homedisplay-video {
+        height: 50%;
+        width: 100%;
+        
+    }
+    .homeDisplay .homeDisplay-sub button.homedisplay-button {
+
+        height: 51px;
+        width: 250px;
+        margin-left: 100px;
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .homeDisplay-sub {
+       flex-direction: column-reverse;
+
+        align-items: center;
+
+        .homedisplay-details {
+            width: 90%;
+            text-align: center;
+            h1 {
+             
+                font-size: 30px;
+            }
+
+            .homedisplay-description {
+         
+                font-size:15px;
+            }
         }
 
+        .homedisplay-video {
+            width: 90%;
+            margin-top: 20px;
+        }
+
+        .homedisplay-details h1 {
+            font-size: 30px;
+            width: 100%;
+        }
+
+        .homedisplay-description {
+            font-size: 15px;
+            width: 100%;
+        }
+
+        button.homedisplay-button {
+            width: 250px;
+            height: 60px;
+            margin-right: 173px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .homeDisplay {
+        padding: 30px 0px;
     }
 
+    .homeDisplay-sub {
+        width: 100%;
+    }
+
+    .homedisplay-details h1 {
+        font-size: 40px;
+    }
+
+    .homedisplay-description {
+        font-size: 24px;
+    }
+
+    .homedisplay-video {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    button.homedisplay-button {
+        width: 230px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 480px) {
+    .homeDisplay {
+        padding: 20px 0px;
+    }
+
+    .homeDisplay-sub {
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .homedisplay-details h1 {
+        font-size: 30px;
+    }
+
+    .homedisplay-description {
+        font-size: 18px;
+    }
+
+    .homedisplay-video {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    button.homedisplay-button {
+        width: 200px;
+        height: 50px;
+    }
 }

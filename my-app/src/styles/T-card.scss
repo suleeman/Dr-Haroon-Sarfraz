@@ -2,17 +2,20 @@
    
    
     .tcard-sub{
-        width: 100%;
-        margin: auto;
-         display: flex;
-         flex-flow: wrap;
-         
-
+        width: 90%;
+         margin: 0 auto;
+       .t-card-cards{ 
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-around;
         .tcard-individual{
+
             width: 300px;
-            height: 450px;
+            height: 500px;
             border: 1px solid black;
-            margin: 40px 0px 40px 130px;
+            margin: 90px 92px 90px 75px;
+
+
             background-color: darkslategrey;
             border-radius: 7%;
             box-shadow: darkslategrey 5px 5px, darkslategrey 10px 10px, darkslategrey 15px 15px, darkslategrey 20px 20px, darkslategrey 25px 25px;
@@ -27,8 +30,16 @@
                
                 color: white;
                 padding: 10px;
+                .tcard-heading{
+                    height: 45px;
+                }
+                .tcard-treatments-only{
+                    max-height: 96px;
+                    overflow: hidden;
+                }
                 h4{
                     font-size: 25px;
+                    
                 }
 
 
@@ -36,5 +47,21 @@
                 
             }
         }
+       }
+
+       
+    .t-card-nav{
+            display: flex;
+            justify-content: end;
+            width: 97%;
+    }
+    .t-card-button {     
+        
+
+        margin: 20px 0px;
+        font-size: 20px;
+        background: none;
+        border: none;
+        text-decoration: underline;}
     }
 }

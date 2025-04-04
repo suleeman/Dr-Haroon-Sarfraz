@@ -1,10 +1,14 @@
 [
-    {"img" : "/images/teeth-Cleaning.png", "diseaseName" : "Root canal", "description" : "We provide best suggestion on root canal and help our customer to retain their lives"},
-    {"img" : "/images/teeth-Cleaning.png", "diseaseName" : "Root canal", "description" : "We provide best suggestion on root canal and help our customer to retain their lives"}, 
-       {"img" : "/images/teeth-Cleaning.png", "diseaseName" : "Root canal", "description" : "We provide best suggestion on root canal and help our customer to retain their lives"},  
-         {"img" : "/images/teeth-Cleaning.png", "diseaseName" : "Root canal", "description" : "We provide best suggestion on root canal and help our customer to retain their lives"},   
-          {"img" : "/images/teeth-Cleaning.png", "diseaseName" : "Root canal", "description" : "We provide best suggestion on root canal and help our customer to retain their lives"},   
-          {"img" : "/images/teeth-Cleaning.png", "diseaseName" : "Root canal", "description" : "We provide best suggestion on root canal and help our customer to retain their lives"},  
-            {"img" : "/images/teeth-Cleaning.png", "diseaseName" : "Root canal", "description" : "We provide best suggestion on root canal and help our customer to retain their lives"},
-            {"img" : "/images/teeth-Cleaning.png", "diseaseName" : "Root canal", "description" : "We provide best suggestion on root canal and help our customer to retain their lives"}
+    {"img" : "/images/teeth-Cleaning.png", "diseaseName" : "Root Canal Treatment (RCT)", "description" : "Stops tooth pain caused by infection. Saves teeth that might need to be removed otherwise. Restores the tooth's function, so you can eat and smile comfortably."},
+    {"img" : "/images/teeth-Cleaning.png", "diseaseName" : "Scaling and Polishing", "description" : " Removes plaque and tartar, helping to prevent gum disease and cavities. Gives your teeth a fresh, clean feel. Keeps your gums healthy and breath fresh. "}, 
+       {"img" : "/images/teeth-Cleaning.png", "diseaseName" : "Teeth Whitening", "description" : "Removes stains from things like coffee, tea, or smoking. Safe, quick, and effective results. Keeps your smile bright for a long time."},  
+         {"img" : "/images/teeth-Cleaning.png", "diseaseName" : "Composite Restoration", "description" : "Restores your teeth to their natural look and function. Quick and easy procedure. Long-lasting results that blend well with your teeth."},   
+          {"img" : "/images/teeth-Cleaning.png", "diseaseName" : "Wisdom Tooth Extraction", "description" : "Prevents pain and infections from wisdom teeth. Stops overcrowding of your other teeth. Safe procedure with a quick recovery."},   
+          {"img" : "/images/teeth-Cleaning.png", "diseaseName" : "Baby Tooth Extraction and Fillings", "description" : "Helps children maintain healthy teeth for proper adult teeth growth. Restores damaged baby teeth to keep them healthy. Friendly and comfortable experience for kids."},  
+            {"img" : "/images/teeth-Cleaning.png", "diseaseName" : "Bone and Tissue Grafts", "description" : "Helps your gums and jawbone heal after tooth loss. Prepares you for dental implants and restores your smile. Improves the look and function of your mouth."},
+            {"img" : "/images/teeth-Cleaning.png", "diseaseName" : "Dental Implants", "description" : "Restores both the look and function of your teeth. Prevents bone loss and helps keep your face shape. Allows you to chew and speak with confidence."},
+            {"img" : "/images/teeth-Cleaning.png", "diseaseName" : "Dentures", "description" : "Comfortable and affordable way to replace missing teeth. Helps you eat and speak clearly. Designed to fit your mouth perfectly for a natural look."},
+            {"img" : "/images/teeth-Cleaning.png", "diseaseName" : "Clear Aligners", "description" : "Discreet and comfortable way to straighten your teeth. Removable for easy cleaning and eating. Effective for mild to moderate teeth alignment."},
+            {"img" : "/images/teeth-Cleaning.png", "diseaseName" : "Veneers", "description" : "Gives you a flawless, natural-looking smile. Minimally invasive, preserving your teeth. Long-lasting with proper care."},
+            {"img" : "/images/teeth-Cleaning.png", "diseaseName" : "Smile Makeovers", "description" : "Combines several treatments to improve your smile. Addresses issues like crooked teeth, stains, or gaps. "}
 ]

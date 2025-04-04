@@ -1,6 +1,6 @@
 import React from 'react'
-import { Header } from "../component/Header";
-import { Footer } from "../component/Footer";
+import {Header} from "../component/header";
+import { Footer } from "../component/footer";
 import { Doctors } from '../component/Doctors';
 export const MyTeam = () => {
   return (

@@ -1,17 +1,12 @@
 
 import React from 'react'
 import "../styles/HomeDisplay.scss";
-import { useNavigate } from 'react-router-dom';
+
+import BookingOnlineButton from './BookingOnlineButton';
 
 
 export const HomeDisplay = () => {
-  const navigate = useNavigate();
 
-
-
-  const bookingOnline = () => {
-        navigate("bookingOnline")
-  }
 
 
   return (
@@ -21,8 +16,7 @@ export const HomeDisplay = () => {
         <div className='homedisplay-details'>    
         <h1 className='homedisplay-heading'> We’re here for whatever kind of care your smile needs. </h1>
         <p className='homedisplay-description'>Our dental team provides exceptional dental treatments for you and your family. As a valued patient we can provide a comprehensive range of general & cosmetic dental services.</p>
-        <button className='homedisplay-button' onClick={bookingOnline}> Book your Appointment </button>
-
+       <BookingOnlineButton />
         </div>
         
         <div className="homedisplay-video">

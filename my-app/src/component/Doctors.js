@@ -1,57 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import DoctorsInfo from "../localData/DoctorsInfo.json";
 import "../styles/Doctors.scss";
 
-import { useRef } from 'react';
-
 export const Doctors = () => {
+  // State for the doctor that was clicked
+  const [whoClicked, setWhoClicked] = useState("Dr Haroon Sarfraz");
 
-    const doctorNames = useRef(0);
-
-
-    const handleClickForInfo = (e) => {
-        e.preventDefault();
-        console.log(e.target.doctorNames.current.innerHTML);
-        if (e.target.innerHTML == 'DrHaroonSarfraz') {
-            console.log("gi");
-        } else if (e.target.innerHTML == "Dr Ali Tiwana") {
-            console.log("Dr Ali Tiwana");
-        } else if (e.target.innerHTML == "Dr Zeeshan Sandhu") {
-            console.log("Dr Zeeshan Sandhu");
-        } else if (e.target.innerHTML ==="Dr Poppo Poppo") {
-            console.log("Dr Poppo Poppo");
-        } else{
-          
-        }
-        
-    }
+  // Handle doctor click
+  const handleClickForInfo = (e) => {
+    e.preventDefault();
+    setWhoClicked(e.target.innerHTML);  // Update the clicked doctor's name
+  };
 
   return (
     <div className='doctors-info'>
-        <img className='doctors-info-img' src='/images/myteam.jpeg'/>
-        <div className='doctors-info-sub'> 
-        <div className='doctors-info-names'> 
-        {DoctorsInfo.map((doctor, i) => {
-            return <> 
-                  <ul> 
-                    <li key={i} ref={doctorNames} onClick={handleClickForInfo} className='doctors-info-name'> {doctor.name}</li>
-                </ul>
-            
-             </>
-        })}  
+      <img className='doctors-info-img' src='/images/myteam.jpeg' alt="Doctors Team" />
+
+      <div className='doctors-info-sub'>
+        <div className='doctors-info-names'>
+          {DoctorsInfo.map((doctor, i) => (
+            <ul key={i}>
+              <li onClick={handleClickForInfo} className='doctors-info-name'>
+                {doctor.name}
+              </li>
+            </ul>
+          ))}
         </div>
+
         <div className='doctors-info-description'>
-        {DoctorsInfo.map((doctor, i) => {
-            return <> 
-
-             <p key={i}> {doctor.info}</p>
-             </>
-        })}
+          {/* Filter doctors based on the clicked name and map to display details */}
+          {DoctorsInfo
+            .filter((doctor) => doctor.name === whoClicked)
+            .map((doctor, i) => (
+              <div className= "doctors-details" key={i}> {/* Key applied to the outermost element */}
+                <img className= "doctors-photo" src={doctor.img} alt={doctor.name} />
+                <p className= "doctors-description">{doctor.info}</p>
+              </div>
+            ))}
         </div>
-
-
-        </div>
-
+      </div>
     </div>
-  )
-}
+  );
+};
