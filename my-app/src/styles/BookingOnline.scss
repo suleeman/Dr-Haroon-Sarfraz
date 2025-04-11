@@ -1,4 +1,4 @@
-.booking-form {
+.form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,12 +9,12 @@
       font-size: 60px;
     }
   
-    .blooking-form-inputs {
+    .booking-form-inputs {
       display: flex;
       flex-flow: column;
       width: 650px;
   
-      .blooking-form-input {
+      .booking-form-input {
         display: flex;
         margin: 20px;
   
@@ -71,7 +71,7 @@
   
     // Responsive styles
     @media (max-width: 1024px) {
-      .blooking-form-inputs {
+      .booking-form-inputs {
         width: 80%; // Adjust width for tablets and small screens
       }
   
@@ -84,7 +84,7 @@
         width: 100%; // Make the submit button full-width
       }
   
-      .blooking-form-input {
+      .booking-form-input {
         flex-direction: column;
         align-items: flex-start;
   
@@ -100,7 +100,7 @@
     }
   
     @media (max-width: 768px) {
-      .blooking-form-inputs {
+      .booking-form-inputs {
         width: 90%; // Further reduce width for mobile devices
       }
   
@@ -108,7 +108,7 @@
         font-size: 40px; // Reduce heading size for mobile
       }
   
-      .blooking-form-input {
+      .booking-form-input {
         flex-direction: column;
         margin-bottom: 10px;
   
@@ -138,7 +138,7 @@
         font-size: 30px; // Further reduce the heading size for very small screens
       }
   
-      .blooking-form-inputs {
+      .booking-form-inputs {
         width: 100%; // Full width for very small screens
         padding: 0 10px; // Add padding to prevent inputs from touching the sides
       }
@@ -148,7 +148,7 @@
         font-size: 1rem;
       }
   
-      .blooking-form-input {
+      .booking-form-input {
         input,
         select {
           width: 100%; // Ensure full-width inputs/selects

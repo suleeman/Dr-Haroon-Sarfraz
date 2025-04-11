@@ -1,5 +1,6 @@
 import React from 'react'
-import "../styles/Footer.scss"
+import "../styles/Footer.scss";
+import { NavLink } from 'react-router-dom';
 
 export const Footer = () => {
   return (
@@ -28,9 +29,9 @@ export const Footer = () => {
 info@drharoonsarfraz.com.au</p>
          </div>
         <div className='footer-social-details'>  <h5> Socials</h5> 
-        <img src={"/images/facebook.png"}/>
-        <img src={"/images/instagram.png"}/>
-        <img src={"/images/linkedin.png"}/>
+    <NavLink>       <img src={"/images/facebook.png"}/>       </NavLink>   
+    <NavLink>    <img src={"/images/instagram.png"}/>   </NavLink>  
+    <NavLink>    <img src={"/images/linkedin.png"}/>  </NavLink>  
         </div>
         </div>
         </div>

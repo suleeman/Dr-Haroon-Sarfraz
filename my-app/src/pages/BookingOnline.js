@@ -91,10 +91,10 @@ export const BookingOnline = ({...props}) => {
     <>
 
  
-      <div className="booking-form">
+      <div className="form">
         <h1 className="booking-form-heading">Book the Appointment</h1>
         <div className="booking-form-div">
-          <form className="blooking-form-inputs">
+          <form className="booking-form-inputs">
             {
               inputValue
                 ? <Error className="booking-form-error" message={"Please fill the details correctly "} />
@@ -109,13 +109,13 @@ export const BookingOnline = ({...props}) => {
                 : <Error className="booking-form-error-hide" message={""} />
             }
 
-            <div className="blooking-form-input">
+            <div className="booking-form-input">
               <Inputs labelName={"Firstname"} type={"text"} name={"Firstname"} onChange={handlechange} />
             </div>
-            <div className="blooking-form-input">
+            <div className="booking-form-input">
               <Inputs labelName={"Lastname"} type={"text"} name={"Lastname"} onChange={handlechange} />
             </div>
-            <div className="blooking-form-input">
+            <div className="booking-form-input">
               <label>Treatments</label>
               <select name="treatmentType" onChange={handlechange}>
               <option value=""></option>
@@ -134,10 +134,10 @@ export const BookingOnline = ({...props}) => {
                 <option value="Smile Makeovers">Smile Makeovers</option>
               </select>
             </div>
-            <div className="blooking-form-input">
+            <div className="booking-form-input">
               <Inputs labelName={"DOB"} type={"text"} name={"DOB"} onChange={handlechange} placeholder={"01/01/1998"} />
             </div>
-            <div className="blooking-form-input">
+            <div className="booking-form-input">
               <Inputs labelName={"Phone"} type={"text"} name={"Phone"} onChange={handlechange} placeholder={"Phone number"} pattern={"^(0[1-9]|1[0-2])\/(0[1-9]|[12][0-9]|3[01])\/(19|20)\d{2}$"}/>
             </div>
             <button onClick={handleSubmit} className="booking-form-submit" type="submit">Submit</button>
