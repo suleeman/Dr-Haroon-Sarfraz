@@ -1,0 +1,49 @@
+.tcard .tcard-sub {
+  width: 90%;
+  margin: 0 auto;
+}
+.tcard .tcard-sub .t-card-cards {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+.tcard .tcard-sub .t-card-cards .tcard-individual {
+  width: 300px;
+  height: 500px;
+  border: 1px solid black;
+  margin: 90px 92px 90px 75px;
+  background-color: darkslategrey;
+  border-radius: 7%;
+  box-shadow: darkslategrey 5px 5px, darkslategrey 10px 10px, darkslategrey 15px 15px, darkslategrey 20px 20px, darkslategrey 25px 25px;
+}
+.tcard .tcard-sub .t-card-cards .tcard-individual .tcard-image {
+  height: 200px;
+  width: 300px;
+  border-radius: 11%;
+}
+.tcard .tcard-sub .t-card-cards .tcard-individual .tcard-details {
+  color: white;
+  padding: 10px;
+}
+.tcard .tcard-sub .t-card-cards .tcard-individual .tcard-details .tcard-heading {
+  height: 45px;
+}
+.tcard .tcard-sub .t-card-cards .tcard-individual .tcard-details .tcard-treatments-only {
+  max-height: 96px;
+  overflow: hidden;
+}
+.tcard .tcard-sub .t-card-cards .tcard-individual .tcard-details h4 {
+  font-size: 25px;
+}
+.tcard .tcard-sub .t-card-nav {
+  display: flex;
+  justify-content: end;
+  width: 97%;
+}
+.tcard .tcard-sub .t-card-button {
+  margin: 20px 0px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  text-decoration: underline;
+}/*# sourceMappingURL=T-card.css.map */

@@ -1,0 +1,61 @@
+.sign-on{
+    margin-top: 100px;
+    margin-right: 80px;
+    .sub-sign-on{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .Patient-authentication-form-inputs{   
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            
+             
+        
+              label {
+                width: 190px;
+                align-content: center;
+              }
+        
+              select {
+                width: 490px;
+                height: 52px;
+                border: 2px solid darkslategrey;
+                border-radius: 20px;
+                padding: 5px 10px;
+        
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                  -webkit-appearance: none;
+                  margin: 0;
+                }
+              }
+        
+              input {
+                width: 616px;
+                height: 40px;
+                border: 2px solid darkslategrey;
+                border-radius: 10px;
+                padding: 5px 10px;
+                margin: 30px;
+              }
+              .patient-form-login {
+                background: white;
+                color: darkslategrey;
+                border: 2px solid darkslategrey;
+                height: 51px;
+                width: 287px;
+                border-radius: 10px;
+               
+                margin-top: 40px;
+              }
+          
+              .patient-form-login:hover {
+                background-color: darkslategrey;
+                color: white;
+              }
+}
+   
+    }
+}

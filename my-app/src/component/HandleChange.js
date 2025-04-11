@@ -1,24 +1,26 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { BookingOnline } from '../pages/BookingOnline';
-import {PatientAuthentication} from "../component/PatientAuthentication"
+import { PatientAuthenticationPortal } from "../component/PatientAuthenticationPortal";
 
-export const HandleChange = (event) => {
-    const [inputs, setInputs] = useState({});
+export const HandleChange = () => {
+  // Ensure the state is initialized as an empty object
+  const [inputs, setInputs] = useState({
 
-    const handleInputChanges = () => {
-    const name = event.target.name;
-    const value = event.target.value;
-    setInputs((values) => ({ ...values, [name]: value }));
-    }
+  });
 
-
+  // This function will be called when a field changes
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setInputs((prevInputs) => ({
+      ...prevInputs,
+      [name]: value  
+    }));
+  };
 
   return (
     <div>
-    <BookingOnline inputs={inputs} handleInputChanges={handleInputChanges}/>
-    <PatientAuthentication inputs={inputs} handleInputChanges={handleInputChanges}/>
+      <BookingOnline handlechange={handleChange} inputs={inputs} />
+      <PatientAuthenticationPortal handlechange={handleChange} inputs={inputs} m={m}/>
     </div>
-
-  )
-}
-
+  );
+};

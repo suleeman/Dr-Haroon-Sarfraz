@@ -1,0 +1,30 @@
+.doctors-info .doctors-info-img {
+  width: 100%;
+  height: auto;
+}
+.doctors-info .doctors-info-sub {
+  width: 60%;
+  margin: auto;
+}
+.doctors-info .doctors-info-sub .doctors-info-names {
+  display: flex;
+  justify-content: center;
+}
+.doctors-info .doctors-info-sub .doctors-info-names .doctors-info-name {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  color: darkslategrey;
+}
+.doctors-info .doctors-info-sub .doctors-info-names .doctors-info-name:hover {
+  color: forestgreen;
+}
+.doctors-info .doctors-info-sub .doctors-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.doctors-info .doctors-info-sub .doctors-details .doctors-photo {
+  width: 150px;
+}/*# sourceMappingURL=Doctors.css.map */

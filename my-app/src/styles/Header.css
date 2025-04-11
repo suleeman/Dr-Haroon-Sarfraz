@@ -1,0 +1,103 @@
+.header {
+  background-color: darkslategrey;
+  color: white;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  /* Navigation menu (flex style above 750px) */
+  /* Hamburger icon */
+}
+.header .headersub {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.header .header-logo {
+  font-size: 24px;
+}
+.header .header-icon {
+  height: 70px;
+  margin-left: 300px;
+}
+.header .header-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* Removing list styling for desktop and above */
+  /* Mobile menu - hidden by default */
+}
+.header .header-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Remove list styling */
+}
+.header .header-nav li {
+  list-style: none;
+}
+.header .header-nav .li {
+  margin-right: 30px;
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 1250px) {
+  .header .header-nav {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: -37px;
+    width: 100vw;
+    background-color: darkslategrey;
+    text-align: center;
+    padding: 20px 32px;
+    /* Remove list styles for mobile */
+  }
+  .header .header-nav.open {
+    display: block;
+  }
+  .header .header-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Remove list styling */
+  }
+  .header .header-nav li {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+}
+.header .hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  /* Show hamburger icon on mobile */
+  /* Transition effects for hamburger bars */
+}
+.header .hamburger .bar {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background-color: white;
+  transition: height 0.6s ease; /* Add transition effect */
+}
+@media (max-width: 1250px) {
+  .header .hamburger {
+    display: flex;
+  }
+}
+.header .hamburger.open .bar:nth-child(1) {
+  transform: rotate(45deg); /* First bar rotates to form part of an 'X' */
+  position: relative;
+  top: 8px;
+}
+.header .hamburger.open .bar:nth-child(2) {
+  opacity: 0; /* Hide the middle bar when clicked */
+}
+.header .hamburger.open .bar:nth-child(3) {
+  transform: rotate(-45deg); /* Third bar rotates to form part of an 'X' */
+  position: relative;
+  top: -8px;
+}/*# sourceMappingURL=Header.css.map */
