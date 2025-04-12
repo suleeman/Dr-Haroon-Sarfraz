@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Inputs } from "../component/Inputs";
-import "../styles/BookingOnline.scss";
+import "../styles/bookingOnlineStyling/BookingOnline.scss";
 import { useNavigate } from 'react-router-dom';
 import { Error } from '../component/Error';
 

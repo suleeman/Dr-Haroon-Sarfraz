@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styles/HomeDisplay.scss";
+import "../styles/homeDisplayStyling/HomeDisplay.scss";
 import { useNavigate } from 'react-router-dom';
 
 const BookingOnlineButton = () => {

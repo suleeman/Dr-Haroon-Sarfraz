@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Inputs} from "../component/Inputs"
-import "../styles/BookingOnline.scss";
-import "../styles/PatientAuthenticationPortal.scss"
+import "../styles/bookingOnlineStyling/BookingOnline.scss";
+import "../styles/patientAuthenticationPortalSytyling/PatientAuthenticationPortal.scss"
 
 import { NavLink } from 'react-router-dom';
 
@@ -34,8 +34,9 @@ export  const PatientAuthenticationPortal = () => {
             <div className="booking-form-input">
             <Inputs labelName={"Password"} type={"text"} name={"Firstname"} onChange={handlechange}placeholder={"password"}  />
         </div>
-        <button className='patient-form-login'> Login </button>
         <p> Forget password, <NavLink to="/ForgetCredential"> click here</NavLink></p>
+        <button className='patient-form-login'> Login </button>
+     
         
           
         </form>

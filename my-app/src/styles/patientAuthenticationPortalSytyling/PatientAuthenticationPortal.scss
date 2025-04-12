@@ -1,6 +1,6 @@
 .sign-on{
     margin-top: 100px;
-    margin-right: 80px;
+    // margin-right: 80px;
     .sub-sign-on{
         display: flex;
         justify-content: center;
@@ -10,14 +10,11 @@
               flex-direction: column;
               justify-content: center;
               align-items: center;
+       
             
              
         
-              label {
-                width: 190px;
-                align-content: center;
-              }
-        
+
               select {
                 width: 490px;
                 height: 52px;
@@ -32,20 +29,34 @@
                 }
               }
         
+            
+              label {
+                width: 100px;
+                align-content: center;
+              }
+        
+         
+        
               input {
-                width: 616px;
-                height: 40px;
+                width: 460px;
+                height: 36px;
                 border: 2px solid darkslategrey;
-                border-radius: 10px;
+                border-radius: 20px;
                 padding: 5px 10px;
-                margin: 30px;
+                margin: 20px;
+        
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                  -webkit-appearance: none;
+                  margin: 0;
+                }
               }
               .patient-form-login {
                 background: white;
                 color: darkslategrey;
                 border: 2px solid darkslategrey;
                 height: 51px;
-                width: 287px;
+                width: 187px;
                 border-radius: 10px;
                
                 margin-top: 40px;

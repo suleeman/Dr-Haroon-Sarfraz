@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import DoctorsInfo from "../localData/DoctorsInfo.json";
-import "../styles/Doctors.scss";
+import "../styles/doctorsStyling/Doctors.scss";
 
 export const Doctors = () => {
   // State for the doctor that was clicked

@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/Treatments.scss"
+import "../styles/treatmentsStyling//Treatments.scss"
 
 import {Tcard} from "../component/T-card";
 import BookingOnlineButton from '../component/BookingOnlineButton';

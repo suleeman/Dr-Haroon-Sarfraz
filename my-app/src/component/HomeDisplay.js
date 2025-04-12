@@ -1,12 +1,17 @@
 
 import React from 'react'
-import "../styles/HomeDisplay.scss";
+import "../styles/homeDisplayStyling/HomeDisplay.scss";
 
 import BookingOnlineButton from './BookingOnlineButton';
 
 
 export const HomeDisplay = () => {
 
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(() => console.log('Service Worker Registered'))
+      .catch((err) => console.error('Service Worker Error:', err));
+  }
 
 
   return (

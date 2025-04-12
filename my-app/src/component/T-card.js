@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import "../styles/T-card.scss";
+import "../styles/t-cardStyling/T-card.scss";
 import cardsData from "../localData/cardsData.json"
 import { useNavigate } from 'react-router-dom';
 export const Tcard = () => {
