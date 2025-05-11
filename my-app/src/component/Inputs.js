@@ -16,8 +16,10 @@ export const Inputs = ({...props}) => {
           maxLength="10"
           minLength="2"
           placeholder={props.placeholder}
+          disabled={props.disabled}
+
           
-      
+ 
         
 
         />

@@ -3,34 +3,34 @@ import {Inputs} from "../component/Inputs";
 import "../styles/bookingOnlineStyling/BookingOnline.css";
 import "../styles/forgetCredential/forgetCredential.scss";
 import {NavLink} from "react-router-dom"
-
-
+import { Alert } from '../component/Alert';
+import { useHandleChange } from '../component/useHandleChange';
+import { UseHandleFormsSubmits } from "../component/UseHandleFormsSubmits";
 
 
 
 
 export const ForgetCredential = () => {
-    const [inputs, setInputs] = useState({});
-    const [Codegenerated, setGenerated] = useState(false);
-    const handleChange = (e) => {
-        e.preventDefault();
-    }
-    const handleSubmit = () => {
+  const { inputs, handleChange } = useHandleChange();
+  const {submitHandler,setAllInputValueEmpty, setSomeInputValueEmpty, missingValue, setDob} = UseHandleFormsSubmits();
 
-    }
+  const requiredInputField = ["email", "dob"];
+  const [Codegenerated, setGenerated] = useState(false);
+
   return (
     <div className='forget-credential'>
       <h1> Reset your password </h1>
-        <form className='form-authenticate-user-reset-password'>
+        <form className='form-authenticate-user-reset-password' onSubmit={(e) => submitHandler(e, inputs, requiredInputField) }>
         <div className="forget-password-form-inputs">
-          <div className="forget-password-form-input">
-          <Inputs labelName={"Email"} type={"text"} name={"Email"} onChange={handleChange} placeholder={"Email or Phone number"} />
+        <Alert setAllInputValueEmpty={setAllInputValueEmpty}  setSomeInputValueEmpty={setSomeInputValueEmpty}  missingValue={missingValue} setDob={setDob}/>
+         <div className="forget-password-form-input">
+          <Inputs labelName={"Email"} type={"text"} name={"email"} onChange={handleChange} placeholder={"Email or Phone number"} />
         </div> 
           <div className="forget-password-form-input">
           <Inputs labelName={"Dob"} type={"text"} name={"dob"} onChange={handleChange} placeholder={"Date of birth 01/01/1999"} />
           </div>
           <p>Go back to login page <NavLink to="/PatientAuthenticationPortal"> click here</NavLink> </p>
-          <button onClick={handleSubmit} className='forget-password-form-submit' > Submit </button>
+          <button className='forget-password-form-submit' > Submit </button>
         
            </div>
              </form>

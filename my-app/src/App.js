@@ -12,6 +12,8 @@ import {ForgetCredential} from "./pages/ForgetCredential"
 import {PatientAuthenticationPortal} from "./pages/PatientAuthenticationPortal"
 import {Header} from "../src/component/header";
 
+
+
 import { Footer } from "../src/component/footer";
 export default function App() {
   return (
@@ -27,6 +29,7 @@ export default function App() {
       <Route path="bookingonline" element={<BookingOnline />} />
       <Route path="forgetcredential" element={<ForgetCredential />} />
       <Route path="PatientAuthenticationPortal" element={<PatientAuthenticationPortal />} />
+     
       <Route path="*" element={<NoPage />} />
     </Routes>
     <Footer />

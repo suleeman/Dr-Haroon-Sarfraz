@@ -1,51 +1,51 @@
-.booking-form {
+.form {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column;
   color: darkslategrey;
 }
-.booking-form .booking-form-heading {
+.form .booking-form-heading {
   font-size: 60px;
 }
-.booking-form .blooking-form-inputs {
+.form .booking-form-inputs {
   display: flex;
   flex-flow: column;
   width: 650px;
 }
-.booking-form .blooking-form-inputs .blooking-form-input {
+.form .booking-form-inputs .booking-form-input {
   display: flex;
   margin: 20px;
 }
-.booking-form .blooking-form-inputs .blooking-form-input label {
+.form .booking-form-inputs .booking-form-input label {
   width: 150px;
   align-content: center;
 }
-.booking-form .blooking-form-inputs .blooking-form-input select {
+.form .booking-form-inputs .booking-form-input select {
   width: 490px;
   height: 52px;
   border: 2px solid darkslategrey;
   border-radius: 20px;
   padding: 5px 10px;
 }
-.booking-form .blooking-form-inputs .blooking-form-input select input::-webkit-outer-spin-button,
-.booking-form .blooking-form-inputs .blooking-form-input select input::-webkit-inner-spin-button {
+.form .booking-form-inputs .booking-form-input select input::-webkit-outer-spin-button,
+.form .booking-form-inputs .booking-form-input select input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.booking-form .blooking-form-inputs .blooking-form-input input {
+.form .booking-form-inputs .booking-form-input input {
   width: 466px;
   height: 36px;
   border: 2px solid darkslategrey;
   border-radius: 20px;
   padding: 5px 10px;
 }
-.booking-form .blooking-form-inputs .blooking-form-input input input::-webkit-outer-spin-button,
-.booking-form .blooking-form-inputs .blooking-form-input input input::-webkit-inner-spin-button {
+.form .booking-form-inputs .booking-form-input input input::-webkit-outer-spin-button,
+.form .booking-form-inputs .booking-form-input input input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.booking-form .blooking-form-inputs .booking-form-submit {
+.form .booking-form-inputs .booking-form-submit {
   background: white;
   color: darkslategrey;
   border: 2px solid darkslategrey;
@@ -55,55 +55,55 @@
   margin-left: 250px;
   margin-top: 40px;
 }
-.booking-form .blooking-form-inputs .booking-form-submit:hover {
+.form .booking-form-inputs .booking-form-submit:hover {
   background-color: darkslategrey;
   color: white;
 }
 @media (max-width: 1024px) {
-  .booking-form .blooking-form-inputs {
+  .form .booking-form-inputs {
     width: 80%;
   }
-  .booking-form .booking-form-heading {
+  .form .booking-form-heading {
     font-size: 50px;
   }
-  .booking-form .booking-form-submit {
+  .form .booking-form-submit {
     margin-left: 0;
     width: 100%;
   }
-  .booking-form .blooking-form-input {
+  .form .booking-form-input {
     flex-direction: column;
     align-items: flex-start;
   }
-  .booking-form .blooking-form-input label {
+  .form .booking-form-input label {
     width: auto;
   }
-  .booking-form .blooking-form-input input,
-  .booking-form .blooking-form-input select {
+  .form .booking-form-input input,
+  .form .booking-form-input select {
     width: 100%;
   }
 }
 @media (max-width: 768px) {
-  .booking-form .blooking-form-inputs {
+  .form .booking-form-inputs {
     width: 90%;
   }
-  .booking-form .booking-form-heading {
+  .form .booking-form-heading {
     font-size: 40px;
   }
-  .booking-form .blooking-form-input {
+  .form .booking-form-input {
     flex-direction: column;
     margin-bottom: 10px;
   }
-  .booking-form .blooking-form-input input,
-  .booking-form .blooking-form-input select {
+  .form .booking-form-input input,
+  .form .booking-form-input select {
     width: 100%;
     height: 45px;
   }
-  .booking-form .blooking-form-input label {
+  .form .booking-form-input label {
     width: 100%;
     text-align: left;
     margin-bottom: 5px;
   }
-  .booking-form .booking-form-submit {
+  .form .booking-form-submit {
     width: 100%;
     margin-left: 0;
     height: 45px;
@@ -111,19 +111,19 @@
   }
 }
 @media (max-width: 480px) {
-  .booking-form .booking-form-heading {
+  .form .booking-form-heading {
     font-size: 30px;
   }
-  .booking-form .blooking-form-inputs {
+  .form .booking-form-inputs {
     width: 100%;
     padding: 0 10px;
   }
-  .booking-form .booking-form-submit {
+  .form .booking-form-submit {
     height: 40px;
     font-size: 1rem;
   }
-  .booking-form .blooking-form-input input,
-  .booking-form .blooking-form-input select {
+  .form .booking-form-input input,
+  .form .booking-form-input select {
     width: 100%;
     height: 40px;
   }

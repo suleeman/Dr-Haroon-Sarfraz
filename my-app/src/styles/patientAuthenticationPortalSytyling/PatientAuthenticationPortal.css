@@ -1,0 +1,56 @@
+.sign-on {
+  margin-top: 100px;
+}
+.sign-on .sub-sign-on {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-on .sub-sign-on .Patient-authentication-form-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sign-on .sub-sign-on .Patient-authentication-form-inputs select {
+  width: 490px;
+  height: 52px;
+  border: 2px solid darkslategrey;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+.sign-on .sub-sign-on .Patient-authentication-form-inputs select input::-webkit-outer-spin-button,
+.sign-on .sub-sign-on .Patient-authentication-form-inputs select input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sign-on .sub-sign-on .Patient-authentication-form-inputs label {
+  width: 100px;
+  align-content: center;
+}
+.sign-on .sub-sign-on .Patient-authentication-form-inputs input {
+  width: 460px;
+  height: 36px;
+  border: 2px solid darkslategrey;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 20px;
+}
+.sign-on .sub-sign-on .Patient-authentication-form-inputs input input::-webkit-outer-spin-button,
+.sign-on .sub-sign-on .Patient-authentication-form-inputs input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sign-on .sub-sign-on .Patient-authentication-form-inputs .patient-form-login {
+  background: white;
+  color: darkslategrey;
+  border: 2px solid darkslategrey;
+  height: 51px;
+  width: 187px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+.sign-on .sub-sign-on .Patient-authentication-form-inputs .patient-form-login:hover {
+  background-color: darkslategrey;
+  color: white;
+}/*# sourceMappingURL=PatientAuthenticationPortal.css.map */
