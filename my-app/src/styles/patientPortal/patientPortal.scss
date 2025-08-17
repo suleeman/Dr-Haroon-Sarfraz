@@ -1,43 +1,81 @@
-.patient-portal{
+.patient-portal {
     display: flex;
-    height: 100vh;
+    height: auto;
 
-.patient-portal-left-menu{
-    background: darkslategrey;
-    color: white;
-    .patient-portal-left-menu-list{
-        display: flex;
-        flex-direction: column;
-        margin: 50px;
-        list-style: none;
-        li{margin: 20px 0px 20px 0px;}
+    .patient-portal-left-menu {
+        background: darkslategrey;
+        color: white;
+        width: 20%;
 
-     
-   
+        .patient-portal-left-menu-list {
+            display: flex;
+            flex-direction: column;
+            margin: 50px;
+            list-style: none;
 
-      
+            li {
+                margin: 20px 0px 20px 0px;
+            }
+
+
+
+
+
+        }
     }
+
+    .patient-portal-right-menu {
+        margin: 50px 35px 20px 35px;
+        width: 80%;
+
+
+        .appointment-details {
+.show-appointment-details,
+.hide-appointment-details {
+  overflow: hidden;
+  transition: max-height 1.5s ease, opacity 1.5s ease;
 }
-    .patient-portal-right-menu{
-        margin: 50px 35px;
-        width: 100%;
-     .profile-details{
+
+.show-appointment-details {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.hide-appointment-details {
+  max-height: 0;
+  opacity: 0;
+}
+
+            .textarea {
+                textarea {
+                   width: 94.2%;
+                    height: auto;
+                }
+
+            }
+
+            .appointments {
+                width: 90%;
+                border: 5px solid black;
+                padding: 10px 20px;
 
 
-   
-     }
-     .appointment-details{
-        
-        .appointments{
-            width: 90%;
-            background-color: lightgray;
-            border: 1px solid black;
-            
-          
-            padding: 10px 20px;
+
+
+                .date {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+
+            }
+
+            .appointments:hover {
+                background-color: #E9F3FF;
+            }
+
         }
 
-     }
-      
+
     }
 }

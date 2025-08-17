@@ -1,0 +1,51 @@
+.patient-portal {
+  display: flex;
+  height: auto;
+}
+.patient-portal .patient-portal-left-menu {
+  background: darkslategrey;
+  color: white;
+  width: 20%;
+}
+.patient-portal .patient-portal-left-menu .patient-portal-left-menu-list {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  list-style: none;
+}
+.patient-portal .patient-portal-left-menu .patient-portal-left-menu-list li {
+  margin: 20px 0px 20px 0px;
+}
+.patient-portal .patient-portal-right-menu {
+  margin: 50px 35px 20px 35px;
+  width: 80%;
+}
+.patient-portal .patient-portal-right-menu .appointment-details .show-appointment-details,
+.patient-portal .patient-portal-right-menu .appointment-details .hide-appointment-details {
+  overflow: hidden;
+  transition: max-height 1.5s ease, opacity 1.5s ease;
+}
+.patient-portal .patient-portal-right-menu .appointment-details .show-appointment-details {
+  max-height: 500px;
+  opacity: 1;
+}
+.patient-portal .patient-portal-right-menu .appointment-details .hide-appointment-details {
+  max-height: 0;
+  opacity: 0;
+}
+.patient-portal .patient-portal-right-menu .appointment-details .textarea textarea {
+  width: 94.2%;
+  height: auto;
+}
+.patient-portal .patient-portal-right-menu .appointment-details .appointments {
+  width: 90%;
+  border: 5px solid black;
+  padding: 10px 20px;
+}
+.patient-portal .patient-portal-right-menu .appointment-details .appointments .date {
+  display: flex;
+  justify-content: space-between;
+}
+.patient-portal .patient-portal-right-menu .appointment-details .appointments:hover {
+  background-color: #E9F3FF;
+}/*# sourceMappingURL=patientPortal.css.map */

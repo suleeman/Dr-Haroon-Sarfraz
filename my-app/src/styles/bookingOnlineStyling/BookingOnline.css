@@ -54,6 +54,7 @@
   border-radius: 20px;
   margin-left: 250px;
   margin-top: 40px;
+  margin-bottom: 100px;
 }
 .form .booking-form-inputs .booking-form-submit:hover {
   background-color: darkslategrey;

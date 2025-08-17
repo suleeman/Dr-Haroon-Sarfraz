@@ -19,6 +19,9 @@ export const Layout = () => {
       <li>
         <Link to="/PatientPortal"> Patient Portal</Link>
       </li>
+            <li>
+        <Link to="/BookingSuccessful">Booking Successful</Link>
+      </li>
 
     </ul>
   </nav>
