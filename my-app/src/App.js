@@ -10,12 +10,12 @@ import {MyTeam}   from './pages/MyTeam';
 import {BookingOnline} from "./pages/BookingOnline";
 import {ForgetCredential} from "./pages/ForgetCredential"
 import {PatientAuthenticationPortal} from "./pages/PatientAuthenticationPortal";
-import { BookingSuccessful } from "./pages/BookingSuccessful";
-import {Header} from "../src/component/header";
+import {BookingSuccessful} from "./pages/BookingSuccessful";
+import {Header} from "./component/Header";
 
 
 
-import { Footer } from "../src/component/footer";
+import { Footer } from "./component/Footer";
 export default function App() {
   return (
    

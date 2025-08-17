@@ -18,3 +18,5 @@ export const BookingSuccessful = () => {
    
   );
 };
+
+export default BookingSuccessful;
