@@ -4,19 +4,21 @@
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
+    "express": "^5.1.0",
     "mongodb": "^6.18.0",
     "mongoose": "^8.17.1",
     "nodemon": "^3.1.10",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.0",
     "react-scripts": "^5.0.1",
     "sass": "^1.90.0"
   },
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

@@ -23,11 +23,13 @@ const server = http.createServer((req, res) => {
   }
 
 
-      function staticRequestResponse(requestInfo, res) {
-    const fileName = requestInfo === "/" ? "home.html" : requestInfo.slice(1); // Handle root request '/' and other paths
-    const filePath = path.join(__dirname, "build", "index.html");
 
-  console.log(filePath);
+
+
+  function staticRequestResponse(requestInfo, res) {
+    const fileName = requestInfo === "/" ? "home.html" : requestInfo.slice(1); // Handle root request '/' and other paths
+    const filePath = path.join(__dirname, "src", "pages", fileName);
+
 
     fs.readFile(filePath, "utf8", (err, data) => {
       if (err) {
@@ -38,9 +40,8 @@ const server = http.createServer((req, res) => {
 
       res.writeHead(200, { "Content-Type": "text/html" });
       res.end(data);
-    });
-      }
-  
+    });}
+
   function postRequestResponse() {
   }
 });
