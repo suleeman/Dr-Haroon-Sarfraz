@@ -2,14 +2,18 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 const { MongoClient } = require("mongodb");
-const {createUser} = require('./src/crudControllerUserSchemas')
 
 
-const {User} = require("./src/schemas");
+
+// const {User} = require("./src/schemas");
+console.log();
 
 
 const server = http.createServer((req, res) => {
   const requestInfo = req.url;
+
+
+
 
   if (req.method === "GET") {
     staticRequestResponse(req.url, res);
@@ -18,8 +22,24 @@ const server = http.createServer((req, res) => {
     postRequestResponse();
   }
 
-  function staticRequestResponse(requestInfo, res) {
-  }
+
+      function staticRequestResponse(requestInfo, res) {
+    const fileName = requestInfo === "/" ? "home.html" : requestInfo.slice(1); // Handle root request '/' and other paths
+    const filePath = path.join(__dirname, "build", "index.html");
+
+  console.log(filePath);
+
+    fs.readFile(filePath, "utf8", (err, data) => {
+      if (err) {
+        res.writeHead(404, { "Content-Type": "text/plain" });
+        res.end("Page not found");
+        return;
+      }
+
+      res.writeHead(200, { "Content-Type": "text/html" });
+      res.end(data);
+    });
+      }
   
   function postRequestResponse() {
   }
