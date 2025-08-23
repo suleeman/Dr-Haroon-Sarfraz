@@ -11,7 +11,7 @@ import {BookingOnline} from "./pages/BookingOnline";
 import {ForgetCredential} from "./pages/ForgetCredential"
 import {PatientAuthenticationPortal} from "./pages/PatientAuthenticationPortal";
 import {BookingSuccessful} from "./pages/BookingSuccessful";
-import {Header} from "./component/Header";
+import {Header} from "./component/header";
 
 
 
