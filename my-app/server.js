@@ -122,8 +122,8 @@ function staticRequestResponse(requestInfo, res) {
 
 });
 
-
-server.listen(3000,  '0.0.0.0',() => {
+const PORT = process.env.PORT || 8080;
+server.listen(PORT,  '0.0.0.0',() => {
   console.log(`working on 30000`);
 });
 
