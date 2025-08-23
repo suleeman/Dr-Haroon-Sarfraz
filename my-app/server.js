@@ -123,7 +123,7 @@ function staticRequestResponse(requestInfo, res) {
 });
 
 
-server.listen(3000, () => {
+server.listen(3000,  '0.0.0.0',() => {
   console.log(`working on 30000`);
 });
 
