@@ -15,7 +15,7 @@ import {Header} from "./component/header";
 
 
 
-import { Footer } from "./component/Footer";
+import { Footer } from "./component/footer";
 export default function App() {
   return (
         <div style={{ padding: 20, backgroundColor: '#f0f0f0', color: '#333' }}>
