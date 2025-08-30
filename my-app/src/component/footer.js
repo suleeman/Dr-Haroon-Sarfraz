@@ -18,7 +18,7 @@ export const Footer = () => {
             <li> Sunday & Public Holiday: Closed</li>
              </ul>
         </div>
-        <div className='footer-second-part'> 
+     
         <div className='footer-address-details'> 
          <h5> Our Location</h5>
 
@@ -29,12 +29,14 @@ export const Footer = () => {
 info@drharoonsarfraz.com.au</p>
          </div>
         <div className='footer-social-details'>  <h5> Socials</h5> 
+        <div className = "social-images"> 
     <NavLink>       <img src={"/images/facebook.png"}/>       </NavLink>   
     <NavLink>    <img src={"/images/instagram.png"}/>   </NavLink>  
     <NavLink>    <img src={"/images/linkedin.png"}/>  </NavLink>  
+    </div>
         </div>
         </div>
-        </div>
+   
     </footer>
   )
 }

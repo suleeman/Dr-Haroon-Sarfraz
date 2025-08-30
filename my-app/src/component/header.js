@@ -13,10 +13,12 @@ export const Header = () => {
   return (
     <header className="header">
       <div className="headersub">
-        <p className="header-logo">Dr Haroon Sarfraz</p>
-        <img className="header-icon" src={'/images/header-icon.png'} alt="Logo" />
-        <nav>
-          <ul className={`header-nav ${menuOpen ? 'open' : ''}`}>
+        <div className="header-logo"><p >Dr Haroon Sarfraz</p> </div>
+        <div className="header-icon">  <img  src={'/images/header-icon.png'} alt="Logo" /></div>
+        
+       
+        <nav className={`header-nav ${menuOpen ? 'open' : ''}`}>
+          <ul >
             <li>
               <NavLink to="/" className="li">Home</NavLink>
             </li>

@@ -1,161 +1,161 @@
 .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: darkslategrey;
+  padding: 40px 20px;
+
+  .booking-form-heading {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .booking-form-inputs {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    color: darkslategrey;
-  
-    .booking-form-heading {
-      font-size: 60px;
-    }
-  
-    .booking-form-inputs {
+    flex-direction: column;
+    width: 650px;
+    max-width: 100%; // Prevent overflow on smaller screens
+
+    .booking-form-input {
       display: flex;
-      flex-flow: column;
-      width: 650px;
-  
-      .booking-form-input {
-        display: flex;
-        margin: 20px;
-  
-        label {
-          width: 150px;
-          align-content: center;
-        }
-  
-        select {
-          width: 490px;
-          height: 52px;
-          border: 2px solid darkslategrey;
-          border-radius: 20px;
-          padding: 5px 10px;
-  
-          input::-webkit-outer-spin-button,
-          input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-          }
-        }
-  
-        input {
-          width: 466px;
-          height: 36px;
-          border: 2px solid darkslategrey;
-          border-radius: 20px;
-          padding: 5px 10px;
-  
-          input::-webkit-outer-spin-button,
-          input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-          }
-        }
+      align-items: center;
+      margin: 20px 0;
+
+      label {
+        width: 150px;
+        margin-right: 10px;
       }
-      
-      .booking-form-submit {
-        background: white;
-        color: darkslategrey;
+
+      select,
+      input {
+        flex: 1;
+        height: 52px;
         border: 2px solid darkslategrey;
-        height: 51px;
-        width: 187px;
         border-radius: 20px;
-        margin-left: 250px;
-        margin-top: 40px;
-            margin-bottom: 100px;
+        padding: 5px 15px;
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
       }
-  
-      .booking-form-submit:hover {
-        background-color: darkslategrey;
-        color: white;
+
+      input {
+        height: 36px;
       }
     }
-  
-    // Responsive styles
-    @media (max-width: 1024px) {
-      .booking-form-inputs {
-        width: 80%; // Adjust width for tablets and small screens
-      }
-  
-      .booking-form-heading {
-        font-size: 50px; // Slightly smaller heading
-      }
-  
-      .booking-form-submit {
-        margin-left: 0; // Center the submit button on smaller screens
-        width: 100%; // Make the submit button full-width
-      }
-  
-      .booking-form-input {
-        flex-direction: column;
-        align-items: flex-start;
-  
-        label {
-          width: auto;
-        }
-  
-        input,
-        select {
-          width: 100%; // Make inputs and selects full-width for small screens
-        }
-      }
+
+    .booking-form-submit {
+      background: white;
+      color: darkslategrey;
+      border: 2px solid darkslategrey;
+      height: 51px;
+      width: 187px;
+      border-radius: 20px;
+      margin: 40px auto 100px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 1rem;
     }
-  
-    @media (max-width: 768px) {
-      .booking-form-inputs {
-        width: 90%; // Further reduce width for mobile devices
-      }
-  
-      .booking-form-heading {
-        font-size: 40px; // Reduce heading size for mobile
-      }
-  
-      .booking-form-input {
-        flex-direction: column;
-        margin-bottom: 10px;
-  
-        input,
-        select {
-          width: 100%; // Full-width for inputs and selects
-          height: 45px; // Slightly reduce input height on mobile
-        }
-  
-        label {
-          width: 100%;
-          text-align: left;
-          margin-bottom: 5px;
-        }
-      }
-  
-      .booking-form-submit {
-        width: 100%;
-        margin-left: 0;
-        height: 45px;
-        font-size: 1.2rem;
-      }
-    }
-  
-    @media (max-width: 480px) {
-      .booking-form-heading {
-        font-size: 30px; // Further reduce the heading size for very small screens
-      }
-  
-      .booking-form-inputs {
-        width: 100%; // Full width for very small screens
-        padding: 0 10px; // Add padding to prevent inputs from touching the sides
-      }
-  
-      .booking-form-submit {
-        height: 40px; // Slightly smaller button for very small screens
-        font-size: 1rem;
-      }
-  
-      .booking-form-input {
-        input,
-        select {
-          width: 100%; // Ensure full-width inputs/selects
-          height: 40px;
-        }
-      }
+
+    .booking-form-submit:hover {
+      background-color: darkslategrey;
+      color: white;
     }
   }
-  
+
+  /* Responsive Styles */
+
+  @media (max-width: 1024px) {
+    .booking-form-heading {
+      font-size: 50px;
+    }
+
+    .booking-form-inputs {
+      width: 80%;
+    }
+
+    .booking-form-input {
+      flex-direction: column;
+      align-items: flex-start;
+
+      label {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+
+      input,
+      select {
+        width: 100%;
+      }
+    }
+
+    .booking-form-submit {
+      width: 100%;
+      height: 50px;
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .booking-form-heading {
+      font-size: 40px;
+    }
+
+    .booking-form-inputs {
+      width: 90%;
+    }
+
+    .booking-form-input {
+      margin-bottom: 15px;
+
+      input,
+      select {
+        height: 45px;
+      }
+
+      label {
+        font-size: 0.95rem;
+      }
+    }
+
+    .booking-form-submit {
+      height: 45px;
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .booking-form-heading {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    .booking-form-inputs {
+      width: 100%;
+      padding: 0 10px;
+    }
+
+    .booking-form-input {
+      margin: 10px 0;
+
+      input,
+      select {
+        height: 40px;
+        font-size: 0.95rem;
+      }
+
+      label {
+        font-size: 0.9rem;
+      }
+    }
+
+    .booking-form-submit {
+      height: 40px;
+      font-size: 1rem;
+    }
+  }
+}

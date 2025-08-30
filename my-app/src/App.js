@@ -27,7 +27,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="myteam" element={<MyTeam />} />
           <Route path="treatments" element={<Treatments />} />
-          <Route path="patientportal" element={<PatientPortal />} />
+          <Route path="patientPortal" element={<PatientPortal />} />
           <Route path="bookingonline" element={<BookingOnline />} />
           <Route path="forgetcredential" element={<ForgetCredential />} />
           <Route path="PatientAuthenticationPortal" element={<PatientAuthenticationPortal />} />

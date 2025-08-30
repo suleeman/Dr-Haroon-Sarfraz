@@ -17,12 +17,14 @@ export const Layout = () => {
         <Link to="/Treatments"> Treatments</Link>
       </li>
       <li>
-        <Link to="/PatientPortal"> Patient Portal</Link>
+        <Link to="/patientPortal"> Patient Portal</Link>
       </li>
             <li>
         <Link to="/BookingSuccessful">Booking Successful</Link>
       </li>
-
+            <li>
+        <Link to="/PatientAuthenticationPortal">PatientAuthenticationPortal</Link>
+      </li>
     </ul>
   </nav>
     

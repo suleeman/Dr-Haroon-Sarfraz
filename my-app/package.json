@@ -15,7 +15,7 @@
     "sass": "^1.90.0"
   },
   "scripts": {
-    "start": "node server.js",
+  "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

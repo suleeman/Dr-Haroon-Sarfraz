@@ -1,116 +1,192 @@
 .header {
-    background-color: darkslategrey;
-    color: white;
-    height: 110px;
+  background-color: darkslategrey;
+  color: white;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+ 
+
+  .headersub {
+    width: 90%;
+   
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    font-size: 18px;
-  
-    .headersub {
-      width: 90%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: relative;
+    position: relative;
+  }
+
+  .header-logo {
+    width: 35%;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .header-icon {
+    width: 35%;
+    img{
+    height: 70px;
+    margin-left: 100px;
     }
+
   
-    .header-logo {
-      font-size: 24px;
+
+  }
+
+  /* Navigation menu (desktop and large tablets) */
+  .header-nav {
+    width: 30%;
+
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+         display: flex;
+    justify-content: space-around;
+    align-items: center;
     }
-  
-    .header-icon {
-      height: 70px;
-      margin-left: 300px;
-    }
-  
-    /* Navigation menu (flex style above 750px) */
-    .header-nav {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-  
-      /* Removing list styling for desktop and above */
-      ul {
-        padding: 0;
-        margin: 0;
-        list-style-type: none; /* Remove list styling */
-      }
-      li{
-        list-style: none;
-      }
-  
-      .li {
-        margin-right: 30px;
-        color: white;
-        text-decoration: none;
-      }
-  
-      /* Mobile menu - hidden by default */
-      @media (max-width: 1250px) {
-        display: none;
-        position: absolute;
-        top: 50px;
-        left: -37px;
-        width: 100vw;
-        background-color: darkslategrey;
-        text-align: center;
-        padding: 20px 32px;
-  
-        &.open {
-          display: block;
-        }
-  
-        /* Remove list styles for mobile */
-        ul {
-          padding: 0;
-          margin: 0;
-          list-style-type: none; /* Remove list styling */
-        }
-  
-        li {
-          margin-bottom: 20px;
-          padding: 10px;
-        }
+
+    li {
+      margin-right: 30px;
+      color: white;
+      list-style: none;
+ 
+
+      &:last-child {
+        margin-right: 0;
       }
     }
-  
-    /* Hamburger icon */
-    .hamburger {
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #ccc;
+      }
+    }
+
+    /* Mobile menu - hidden by default */
+    @media (max-width: 1250px) {
       display: none;
+      position: absolute;
+      top: 110px;
+      left: 0;
+      width: 100vw;
+      background-color: darkslategrey;
+      text-align: center;
+      padding: 20px 0;
       flex-direction: column;
-      cursor: pointer;
-      padding: 10px;
-  
-      .bar {
-        width: 30px;
-        height: 3px;
-        margin: 5px;
-        background-color: white;
-        transition: height 0.6s ease; /* Add transition effect */
-      }
-  
-      /* Show hamburger icon on mobile */
-      @media (max-width: 1250px) {
+      z-index: 1000;
+
+      
+  .header-icon {
+    height: 70px;
+    margin-left: 150px;
+
+  }
+      &.open {
         display: flex;
       }
-  
-      /* Transition effects for hamburger bars */
-      &.open .bar:nth-child(1) {
-        transform: rotate(45deg); /* First bar rotates to form part of an 'X' */
-        position: relative;
-        top: 8px;
+
+      ul {
+        flex-direction: column;
       }
-  
-      &.open .bar:nth-child(2) {
-        opacity: 0; /* Hide the middle bar when clicked */
-      }
-  
-      &.open .bar:nth-child(3) {
-        transform: rotate(-45deg); /* Third bar rotates to form part of an 'X' */
-        position: relative;
-        top: -8px;
+
+      li {
+        margin: 15px 0;
+        padding: 0;
       }
     }
   }
-  
+
+  /* Hamburger icon */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1100;
+
+    .bar {
+      width: 30px;
+      height: 3px;
+      margin: 5px 0;
+      background-color: white;
+      transition: all 0.3s ease;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 1250px) {
+      display: flex;
+    }
+
+    &.open .bar:nth-child(1) {
+      transform: rotate(45deg);
+      position: relative;
+      top: 8px;
+    }
+
+    &.open .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    &.open .bar:nth-child(3) {
+      transform: rotate(-45deg);
+      position: relative;
+      top: -8px;
+    }
+  }
+
+  /* ===== Extra Responsiveness for Small Screens (down to 300px) ===== */
+  @media (max-width: 300px) {
+    font-size: 14px;
+    height: 90px;
+    padding: 0 10px;
+
+    .headersub {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      justify-content: space-around;
+    }
+
+    .header-logo {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .header-icon {
+      height: 50px;
+      margin-left: 60;
+    }
+
+    .hamburger {
+      padding: 5px;
+
+      .bar {
+        width: 25px;
+        height: 2px;
+        margin: 4px 0;
+      }
+    }
+
+    .header-nav {
+      top: 90px;
+      padding: 10px 0;
+      margin-left: 30px;
+
+      ul {
+        width: 100%;
+      }
+
+      li {
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -6,14 +6,17 @@
     .doctors-info-sub{       
           width: 60%;
            margin: auto;
+           padding: 50px 0px;
         .doctors-info-names{
             display: flex;
             justify-content: center;
+             padding: 20px 0px;
+             font-size: 34px;
             .doctors-info-name{
                 display: flex;
                 text-decoration: none;
                 list-style: none;
-                color: darkslategrey;;
+                color: darkslategrey;
         
             }
             .doctors-info-name:hover{
@@ -28,10 +31,12 @@
            flex-direction: column;
                 .doctors-photo{
                     width: 150px;
+                    padding: 20px 0px;
 
                 }
                 .doctors-description{
-
+ padding: 10px 0px;
+     width: 85%;
                 }
             }
         

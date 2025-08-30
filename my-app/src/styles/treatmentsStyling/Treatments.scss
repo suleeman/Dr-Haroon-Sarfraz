@@ -1,6 +1,22 @@
-.booking-button-treatments{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
+.booking-button-treatments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+
+  // Add wrapping for multiple buttons or elements on smaller screens
+  flex-wrap: wrap;
+  gap: 20px; // space between items when wrapped
+
+  // Responsive tweaks
+  @media (max-width: 768px) {
+    margin: 20px 10px;
+    gap: 15px;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column; // stack items vertically
+    margin: 15px 5px;
+    gap: 10px;
+  }
 }

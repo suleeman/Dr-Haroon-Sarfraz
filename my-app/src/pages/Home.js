@@ -9,7 +9,7 @@ export const Home = () => {
   return (<>
 
     <HomeDisplay />
-    <Tcard/>
+    <Tcard/> 
 
     </>
   )
